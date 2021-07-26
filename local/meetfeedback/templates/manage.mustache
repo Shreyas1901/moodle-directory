@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PHP feedback form</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        <!—We can add some styles later. -->
+    </style>
+</head>
+<body>
+<!—Here be our form. -->
+<!-- Begin form, and specify where it’s going to send our data and how. -->
+<form action="URL_OF_OUR_PROCESSING_SCRIPT.PHP" method="post" name="form">
+    <!—Inside the form, let’s put some input fields. -->
+    <input name="name" type="text" placeholder="Your name"/>
+    <br>
+    <input name="email" type="text" placeholder="Email"/>
+    <br>
+    <input size="30" name="header" type="text" placeholder="Subject"/>
+    <br>
+    <textarea cols="32" name="message" rows="5"> Your message
+  </textarea>
+    <br>
+    <!—Let’s add a button that submits this form to the server. -->
+    <input type="submit" value="Submit" />
+</form>
+
+</body>
+</html>
